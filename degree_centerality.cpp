@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include <vector>
 #include <iterator>
@@ -6,14 +8,28 @@
 #include <stack>
 #include <queue>
 #include <string>
-#include <sstream>
+#include <windows.h>
+#include <fstream>
 
 using namespace std;
+
+/*
+Used this input as a test:
+ 	 4 5
+	0 2 10
+	1 0 1
+	0 3 5
+	3 1 1
+	2 3 4
+ *
+ */
 
 //Returns degree of node n
 int find_degree(int n, vector<list<pair<int, int>>> adj_list);
 
 int main() {
+	//File that the dot language will be saved in, descriping the graphs (to be used by graphviz)
+	ofstream  dotfile("graph1.dt", ofstream::trunc);
 	int number_of_nodes;
 	int number_of_edges;
 
@@ -24,6 +40,8 @@ int main() {
 	vector<list<pair<int, int>>> adj_list(number_of_nodes);
 
 
+	dotfile << "graph" << endl;
+	dotfile << "{" << endl;
 //INPUT PART
 	for(int i = 0; i < number_of_edges; i++)
 	{
@@ -34,9 +52,11 @@ int main() {
 
 		adj_list[node].push_back(make_pair(target, weight));
 		adj_list[target].push_back(make_pair(node, weight));
+		dotfile << node << " -- " << target << " [label = " << weight << "];" << endl;
 	}
 //END OF INPUT PART
-
+	dotfile << "}";
+	dotfile.close();
 
 //JUST AN EXAMPLE OF ACCESSING THE ADJACENCY LIST!, CAN BE OMITTED
 	for(int i = 0; i < number_of_nodes; i++)
@@ -55,6 +75,8 @@ int main() {
 		cout << "degree of " << i << " = " << find_degree(i, adj_list) << endl;
 	}
 //END OF EXAMPLE
+
+	system("cppbatch_main.bat");
 
 	return 0;
 }
