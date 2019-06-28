@@ -1,4 +1,10 @@
-
+//============================================================================
+// Name        : Project_DS.cpp
+// Author      : Ali Amr Farouk
+// Version     :
+// Copyright   : 
+// Description : Hello World in C++, Ansi-style
+//============================================================================
 
 #include <iostream>
 #include <vector>
@@ -55,6 +61,12 @@ int main() {
 		dotfile << node << " -- " << target << " [label = " << weight << "];" << endl;
 	}
 //END OF INPUT PART
+
+	//Change node size according to it's degree (in dot language)
+	for(int i = 0; i < number_of_nodes; i++)
+		dotfile << i << "[shape = circle, width = " << ((float)find_degree(i, adj_list) / number_of_edges) * 3 << "];" << endl;
+
+	//Closing the dot file.
 	dotfile << "}";
 	dotfile.close();
 
