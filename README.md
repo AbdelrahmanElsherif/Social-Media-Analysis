@@ -19,17 +19,17 @@ The project aims at applying algorithms based on graph theory to compute the cen
 2- Download Graphviz for windows:<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Download the installer from this <a href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html" target="_blank">link</a><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: GraphvizX.XX → Graphviz2.38)
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command:
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;command:
           <b>dot.exe</b><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d. Exit the command window.<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e. Go to the Control Panel →  System and Security → System, and on the right side navigation panel, you will see the link Advanced          systems settings.<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f. Once there in advance settings, a dialogue box will open which will show the button Environment Variables. Click on the button          Environment Variables.<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g. Select the entry "Path" on the system variables section and add C:\Program Files (x86)\GraphvizX.XX\bin to the existing path.            Please see this <a href="https://bobswift.atlassian.net/wiki/download/thumbnails/20971549/system_variable.png?version=1&modificationDate=1552911615663&cacheVersion=1&api=v2&width=400&height=315" target="_blank">screenshot</a> and <a href="https://bobswift.atlassian.net/wiki/download/thumbnails/20971549/sys_variable.png?version=1&modificationDate=1552911641477&cacheVersion=1&api=v2&width=400&height=303" target="_blank">this</a> for reference.
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Note: Please make sure you add ";" at the PATH which is already existing under User Variables and mention the path C:\Program          Files (x86)\GraphvizX.XX\bin. Also please add a New path on the system variables section and add the Path C:\Program Files              (x86)\GraphvizX.XX\bin</i><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e. Go to the Control Panel →  System and Security → System, and on the right side navigation panel, you will see the link &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced systems settings.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f. Once there in advance settings, a dialogue box will open which will show the button Environment Variables. Click on &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the button Environment Variables.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;g. Select the entry "Path" on the system variables section and add C:\Program Files (x86)\GraphvizX.XX\bin to the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;existing path.            Please see this <a href="https://bobswift.atlassian.net/wiki/download/thumbnails/20971549/system_variable.png?version=1&modificationDate=1552911615663&cacheVersion=1&api=v2&width=400&height=315" target="_blank">screenshot</a> and <a href="https://bobswift.atlassian.net/wiki/download/thumbnails/20971549/sys_variable.png?version=1&modificationDate=1552911641477&cacheVersion=1&api=v2&width=400&height=303" target="_blank">this</a> for reference.
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Note: Please make sure you add ";" at the PATH which is &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;already existing under User Variables and mention the path C:\Program          Files (x86)\GraphvizX.XX\bin. Also please add a New &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;path on the system variables section and add the Path C:\Program Files              (x86)\GraphvizX.XX\bin</i><br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h. Click on Ok Button. <br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Restart Confluence from a new cmd window.<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j. Go to the system information page on confluence instance.<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k. Verify if you can see C:\Program Files (x86)\GraphvizX.XX\bin on "Path" attribute on system information page in confluence.<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k. Verify if you can see C:\Program Files (x86)\GraphvizX.XX\bin on "Path" attribute on system information page in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;confluence.<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l. If the path is available, that means that the configuration changes are successful.<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m. Go the page where you have used the macro and verify if the add-ons work.<br />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n. Restart Confluence.<br />
