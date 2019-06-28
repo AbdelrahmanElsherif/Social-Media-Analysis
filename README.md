@@ -4,11 +4,14 @@
   </a>
 </p>
 
+***
+
 ### Introduction 
 
 <p>
 The project aims at applying algorithms based on graph theory to compute the centrality property for each node in the graph. Definition of ‘central’ varies by context/purpose. However, the main aim is to give a score to each node. This score is used to determine the most important nodes in the graph. These techniques are used in social media analysis to determine the set of influencers out of a graph containing millions of users and connections. Centrality has many definitions. Each definition gives scores to nodes in different ways. You are asked to implement three centrality metrics on undirected connected graphs.</p>
 
+***
 
 ### Installation Steps (for development)
 
@@ -34,6 +37,8 @@ The project aims at applying algorithms based on graph theory to compute the cen
 4- Add the cppbatch_main.bat file in your main C++ project folder.<br />
 5- You are good to go!<br />
        
+***
+
 ### Helpful Links (Graphviz & Dot Language guides)
 - https://bobswift.atlassian.net/wiki/spaces/GVIZ/pages/20971549/How+to+install+Graphviz+software <br />
 - http://www.drdobbs.com/cpp/graphviz-and-c/184402049 <br />
