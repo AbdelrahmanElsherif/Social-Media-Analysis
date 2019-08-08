@@ -34,7 +34,7 @@ Used this input as a test:
 int find_degree(int n, vector<list<pair<int, int>>> adj_list);
 
 int main() {
-	//File that the dot language will be saved in, descriping the graphs (to be used by graphviz)
+	//File that the dot language will be saved in, describing the graphs (to be used by graphviz)
 	ofstream  dotfile("graph1.dt", ofstream::trunc);
 	int number_of_nodes;
 	int number_of_edges;
