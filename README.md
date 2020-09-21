@@ -1,6 +1,6 @@
 <h1 align="center"> Social Media Analysis Application </h1> <br>
 <p align="center">
-    <img alt="SM Analysis" title="SM Analysis" src="http://i65.tinypic.com/29nt9fo.jpg">
+    <img alt="SM Analysis" title="SM Analysis" src="https://www.sparc.bc.ca/wp-content/uploads/2016/05/network.png">
   </a>
 </p>
 
